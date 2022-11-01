@@ -1,30 +1,30 @@
-﻿NOMBRE;RECOMPENSA;¿FRUTA DEL DIABLO?;NOMBRE DE LA FRUTA DEL DIABLO;¿HAKI DEL CONQUISTADOR?;ESPECIE;MARINE - PIRATA - REVOLUCIONARIO;VIVO - MUERTO
-Monkey D. Luffy;3.000.000.000 €;Si;Hito Hito no mi style Nika;Si;Humano;Pirata;Vivo
-Sabo;602.000.000 €;Si;Mera Mera no mi;No;Humano;Revolucionario;Vivo
-Portgas D. Ace;550.000.000 €;Si;Mera Mera no mi;No;Humano;Pirata;Muerto
-Smoker;  No tiene  ;Si;Moku Moku no mi;No;Humanio;Marine;Vivo
-Pedro;382.000.000 €;No;NULL;No;Mink;Pirata;Muerto
-Kaidou;4.611.100.000 €;Si;Uo Uo no mi style Seiryu;Si;Bestia;Pirata;Muerto
-Charlotte Linlin;4.388.000.000 €;Si;Soru Soru no mi;Si;Humano;Pirata;Muerto
-Trafalgar D. Water Law;3.000.000.000 €;Si;Ope Ope no mi;Si;Humano;Pirata;Vivo
-Eustass Captain Kid;3.000.000.000 €;Si;Jiki Jiki no mi;Si;Humano;Pirata;Vivo
-Yamato;  No tiene  ;Si;Inu Inu no mi style Okuchi no Makami;Si;Bestia;Pirata;Vivo
-Hatchan;8.000.000 €;No;NULL;No;Gyojin;Pirata;Vivo
-Jaguar D. Salu;  No tiene  ;No;NULL;No;Gigante;Marine;Muerto
-Nico Robin;930.000.000 €;Si;Hana Hana no mi;No;Humano;Pirata;Vivo
-Silvers Rayleigh;  Desconocida  ;No;NULL;Si;Humano;Pirata;Vivo
-Kizaru;  No tiene  ;Si;Pika Pika no mi;No;Humano;Marine;Vivo
-Aokiji;  No tiene  ;Si;Hie Hie no mi;No;Humano;Marine;Vivo
-Akainu;  No tiene  ;Si;Magu Magu no mi;No;Humano;Marine;Vivo
-Fujitora;  No tiene  ;Si;Zushi Zushi no mi;No;Humano;Marine;Vivo
-Ryokugyu;  No tiene  ;Si;Mori Mori no mi;No;Humano;Marine;Vivo
-Carrot;  No tiene  ;No;NULL;No;Mink;Pirata;Vivo
-Buggy el Payaso;3.189.000.000 €;Si;Bara Bara no mi;No;Humano;Pirata;Vivo
-Monkey D. Dragon;  Desconocida  ;No;NULL;No;Humano;Revolucionario;Vivo
-Emporio Ivankov;100.000.000 €;Si;Horu Horu no mi;No;Humano;Revolucionario;Vivo
-Marshall D. Teach;3.996.000.000 €;Si;Yami Yami no mi - Gura Gura no mi;No;Humano;Pirata;Vivo
-Roronoa Zoro;;No;NULL;No;Humano;Pirata;Vivo
-Shanks el Pelirrojo;4.048.900.000 €;No;NULL;Si;Humano;Pirata;Vivo
-Kozuki Oden;  Desconocida  ;No;NULL;Si;Humano;Pirata;Muerto
-Edward Newgate;5.046.000.000 €;Si;Gura Gura no mi;Si;Humano;Pirata;Muerto
-Gol D. Roger;5.564.800.000 €;No;NULL;Si;Humano;Pirata;Muerto
+﻿NOMBRE,RECOMPENSA,¿FRUTA DEL DIABLO?,NOMBRE DE LA FRUTA DEL DIABLO,¿HAKI DEL CONQUISTADOR?,ESPECIE,MARINE - PIRATA - REVOLUCIONARIO,VIVO - MUERTO
+Monkey D. Luffy,3.000.000.000 €,Si,Hito Hito no mi style Nika,Si,Humano,Pirata,Vivo
+Sabo,602.000.000 €,Si,Mera Mera no mi,No,Humano,Revolucionario,Vivo
+Portgas D. Ace,550.000.000 €,Si,Mera Mera no mi,No,Humano,Pirata,Muerto
+Smoker,  No tiene  ,Si,Moku Moku no mi,No,Humanio,Marine,Vivo
+Pedro,382.000.000 €,No,NULL,No,Mink,Pirata,Muerto
+Kaidou,4.611.100.000 €,Si,Uo Uo no mi style Seiryu,Si,Bestia,Pirata,Muerto
+Charlotte Linlin,4.388.000.000 €,Si,Soru Soru no mi,Si,Humano,Pirata,Muerto
+Trafalgar D. Water Law,3.000.000.000 €,Si,Ope Ope no mi,Si,Humano,Pirata,Vivo
+Eustass Captain Kid,3.000.000.000 €,Si,Jiki Jiki no mi,Si,Humano,Pirata,Vivo
+Yamato,  No tiene  ,Si,Inu Inu no mi style Okuchi no Makami,Si,Bestia,Pirata,Vivo
+Hatchan,8.000.000 €,No,NULL,No,Gyojin,Pirata,Vivo
+Jaguar D. Salu,  No tiene  ,No,NULL,No,Gigante,Marine,Muerto
+Nico Robin,930.000.000 €,Si,Hana Hana no mi,No,Humano,Pirata,Vivo
+Silvers Rayleigh,  Desconocida  ,No,NULL,Si,Humano,Pirata,Vivo
+Kizaru,  No tiene  ,Si,Pika Pika no mi,No,Humano,Marine,Vivo
+Aokiji,  No tiene  ,Si,Hie Hie no mi,No,Humano,Marine,Vivo
+Akainu,  No tiene  ,Si,Magu Magu no mi,No,Humano,Marine,Vivo
+Fujitora,  No tiene  ,Si,Zushi Zushi no mi,No,Humano,Marine,Vivo
+Ryokugyu,  No tiene  ,Si,Mori Mori no mi,No,Humano,Marine,Vivo
+Carrot,  No tiene  ,No,NULL,No,Mink,Pirata,Vivo
+Buggy el Payaso,3.189.000.000 €,Si,Bara Bara no mi,No,Humano,Pirata,Vivo
+Monkey D. Dragon,  Desconocida  ,No,NULL,No,Humano,Revolucionario,Vivo
+Emporio Ivankov,100.000.000 €,Si,Horu Horu no mi,No,Humano,Revolucionario,Vivo
+Marshall D. Teach,3.996.000.000 €,Si,Yami Yami no mi - Gura Gura no mi,No,Humano,Pirata,Vivo
+Roronoa Zoro,,No,NULL,No,Humano,Pirata,Vivo
+Shanks el Pelirrojo,4.048.900.000 €,No,NULL,Si,Humano,Pirata,Vivo
+Kozuki Oden,  Desconocida  ,No,NULL,Si,Humano,Pirata,Muerto
+Edward Newgate,5.046.000.000 €,Si,Gura Gura no mi,Si,Humano,Pirata,Muerto
+Gol D. Roger,5.564.800.000 €,No,NULL,Si,Humano,Pirata,Muerto
