@@ -60,4 +60,24 @@ function read_json(string $json_filename): array {
     return $result;
 }
 
+// Returns an array with the CSV Data readed
 // --------------------------------------------------------------------
+
+function readCsvData():array {
+    $data = [];
+    if(($file = fopen("db/onepiece_datos.csv" , "r")) !== FALSE) {
+        while (($csv = fgetcsv($file, 1000, ",")) !== FALSE){
+            $data[] = $csv;
+        }
+        fclose($file);
+    }
+    return $data;
+}
+// 
+// --------------------------------------------------------------------
+function apiQuery(int $id) {
+    
+    $apiResponse = shell_exec("curl https://api.jikan.moe/v4/people/".$id);
+    
+    return $apiResponse;
+}

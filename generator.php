@@ -47,19 +47,21 @@
         shell_exec($removeDirCommand."index.html");    }
 
     function main() {
-        removeOldPublicFolders();
-        $imageArray = getImageArray();
-        generatePublicFolders();
-        $imageArrayWithNewPath = changePaths($imageArray);
-        $index_template_filename = "src/templates/index.template.php";
-        $comics_template_filename = "src/templates/comics.template.php";
-        $csvData_template_filename = "src/templates/csvData.template.php";
-        $apiCaller_template_filename = "src/templates/apiCaller.template.php";
-        copyImages($imageArray);
-        makeHtmlFile($index_template_filename, $imageArrayWithNewPath, "index.html");
-        makeHtmlFile($comics_template_filename, $imageArrayWithNewPath, "comics.html");
-        makeHtmlFile($csvData_template_filename, $imageArrayWithNewPath, "csvData.html");
-        makeHtmlFile($apiCaller_template_filename, $imageArrayWithNewPath, "apiCaller.html");
+        // removeOldPublicFolders();
+        // $imageArray = getImageArray();
+        // generatePublicFolders();
+        // $imageArrayWithNewPath = changePaths($imageArray);
+        // $csvData = readCsvData();
+        // print_r($csvData);
+        // $index_template_filename = "src/templates/index.template.php";
+        // $comics_template_filename = "src/templates/comics.template.php";
+        // $csvData_template_filename = "src/templates/csvData.template.php";
+        // $apiCaller_template_filename = "src/templates/apiCaller.template.php";
+        // copyImages($imageArray);
+        // makeHtmlFile($index_template_filename, $imageArrayWithNewPath, "index.html");
+        // makeHtmlFile($comics_template_filename, $imageArrayWithNewPath, "comics.html");
+        // makeHtmlFile($csvData_template_filename, $csvData, "csvData.html");
+        // makeHtmlFile($apiCaller_template_filename, $imageArrayWithNewPath, "apiCaller.html");
     }
 
     main();
