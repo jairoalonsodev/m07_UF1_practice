@@ -75,9 +75,13 @@ function readCsvData():array {
 }
 // 
 // --------------------------------------------------------------------
-function apiQuery(int $id) {
+function apiQuery():array {
+    $response = [];
+    for($i = 1; $i < 4; $i++) {
+        $apiResponse = shell_exec("curl https://api.jikan.moe/v4/people/".$i);
+        $responses = json_decode($apiResponse);
+        $response[$responses->data->name] = $responses->data->url ;
+    }
     
-    $apiResponse = shell_exec("curl https://api.jikan.moe/v4/people/".$id);
-    
-    return $apiResponse;
-}
+    return $response;
+}   

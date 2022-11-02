@@ -3,9 +3,8 @@
     require_once(__DIR__ . "/src/lib/utils.php");
 
 
-    function makeHtmlFile(string $index_template_filename, array  $imageArrayWithNewPath, string $fileName): void {
+    function makeHtmlFile(string $index_template_filename, array $template_vars, string $fileName): void {
         $html_filename = "public/".$fileName;
-        $template_vars = ['imageArrayWithNewPath' => $imageArrayWithNewPath];
         $index = render_template($index_template_filename, $template_vars);
         file_put_contents($html_filename, $index);
     }
@@ -47,21 +46,24 @@
         shell_exec($removeDirCommand."index.html");    }
 
     function main() {
-        // removeOldPublicFolders();
-        // $imageArray = getImageArray();
-        // generatePublicFolders();
-        // $imageArrayWithNewPath = changePaths($imageArray);
-        // $csvData = readCsvData();
-        // print_r($csvData);
-        // $index_template_filename = "src/templates/index.template.php";
-        // $comics_template_filename = "src/templates/comics.template.php";
-        // $csvData_template_filename = "src/templates/csvData.template.php";
-        // $apiCaller_template_filename = "src/templates/apiCaller.template.php";
-        // copyImages($imageArray);
-        // makeHtmlFile($index_template_filename, $imageArrayWithNewPath, "index.html");
-        // makeHtmlFile($comics_template_filename, $imageArrayWithNewPath, "comics.html");
-        // makeHtmlFile($csvData_template_filename, $csvData, "csvData.html");
-        // makeHtmlFile($apiCaller_template_filename, $imageArrayWithNewPath, "apiCaller.html");
+        removeOldPublicFolders();
+        $imageArray = getImageArray();
+        generatePublicFolders() ;
+        $imageArrayWithNewPath = changePaths($imageArray);
+        $csvData = readCsvData();
+        $response = apiQuery();
+        $imageTemplateVars = ["imageArrayWithNewPath" => $imageArrayWithNewPath];
+        $csvTemplateVars = ["csvData" => $csvData];
+        $apiTemplateVars = ["response" => $response];
+        $index_template_filename = "src/templates/index.template.php";
+        $comics_template_filename = "src/templates/comics.template.php";
+        $csvData_template_filename = "src/templates/csvData.template.php";
+        $apiCaller_template_filename = "src/templates/apiCaller.template.php";
+        copyImages($imageArray);
+        makeHtmlFile($index_template_filename, $imageTemplateVars, "index.html");
+        makeHtmlFile($comics_template_filename, $imageTemplateVars, "comics.html");
+        makeHtmlFile($csvData_template_filename, $csvTemplateVars, "csvData.html");
+        makeHtmlFile($apiCaller_template_filename, $apiTemplateVars, "apiCaller.html");
     }
 
     main();

@@ -31,7 +31,23 @@
             </ul>
         </div>
     </nav>
-
+    <?php 
+        $capNumber = 1059;
+        $capitulo = "capitulo ".$capNumber;
+        $pattern = "/capitulo*_00.jpg/i";
+        foreach($imageArrayWithNewPath as $image) {
+            echo 
+            "<div class='card' style='width: 18rem;'>
+                <img class='card-img-top' src='$image' alt='Card image cap'>
+                <div class='card-body'>
+                    <h5 class='card-title'>One Piece</h5>
+                    <p class='card-text'>$capitulo</p>
+                    <a href='#' class='btn btn-primary'>Go somewhere</a>
+                </div>
+            </div>";
+            $capNumber++;
+        }
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

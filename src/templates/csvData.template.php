@@ -34,7 +34,7 @@
     
     <table class="table table-dark table-striped">
     <?php 
-        foreach($imageArrayWithNewPath as $dataUnit) {
+        foreach($csvData as $dataUnit) {
             echo "<tr>";
             foreach($dataUnit as $unit) {
                 echo "<td>".$unit."</td>";
