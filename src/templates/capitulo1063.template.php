@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comic Viewer</title>
+    <title>Capitulo 1063</title>
     <link rel="icon" type="image/x-icon" href="/img/onePieceLogo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -33,29 +33,28 @@
             </ul>
         </div>
     </nav>
-    <div class="row row-cols-3 row-cols-md-3 g-4" style="width: 100rem; margin-left: auto; margin-right: auto;">
-        <?php
-        $capNumber = 1059;
-        $chapters = ["img/capitulo1059_00.jpg", "img/capitulo1060_00.jpg", "img/capitulo1061_00.jpg", "img/capitulo1062_00.jpg", "img/capitulo1063_00.jpg", "img/capitulo1064_00.jpg",];
-        foreach ($chapters as $chapter) {
-            $capitulo = "capitulo " . $capNumber;
-            if (preg_grep("#$chapter#i", $imageArrayWithNewPath)) {
-                echo
-                "<a href='./$capNumber.html'>
-                    <div class='col'>
-                        <div class='card h-100'>
-                            <img src='$chapter' class='card-img-top'>
-                            <div class='card-body' style='color:black;'>
-                                <h5 class='card-title'>One Piece</h5>
-                                <p class='card-text'>$capitulo</p>
-                            </div>    
-                        </div>  
-                    </div>
-                </a>";
+    <div id="carouselExampleControls" class="carousel slide w-60" data-bs-ride="carousel" style="margin-left: auto; margin-right:auto;">
+        <div class="carousel-inner w-75">
+            <div class="carousel-item active">
+                <img src="<?php echo $chapter1063ImagesWithCorrectPath[0]; ?>" class="d-block">
+            </div>
+            <?php
+            for($i = 1; $i < count($chapter1063ImagesWithCorrectPath); $i++) {
+                echo    "<div class='carousel-item w-75'>
+                                <img src='$chapter1063ImagesWithCorrectPath[$i]' class='d-block'>
+                            </div>";
             }
-            $capNumber++;
-        }
-        ?>
+
+            ?>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
