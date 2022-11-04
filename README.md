@@ -1,4 +1,4 @@
-# Comic Viewer
+# Comic Viewer 📖
 
 Este proyecto es una web generada a partir de scripts (SSG) escritos en PHP para poder visualizar comics y estar a la última del manga "One Piece"
 
