@@ -68,11 +68,11 @@ function read_json(string $json_filename): array
 // Returns an array with the CSV Data readed
 // --------------------------------------------------------------------
 
-function readCsvData(): array
+function readCsvData(string $fileName, string $sepatator): array
 {
     $data = [];
-    if (($file = fopen("db/onepiece_datos.csv", "r")) !== FALSE) {
-        while (($csv = fgetcsv($file, 1000, ",")) !== FALSE) {
+    if (($file = fopen("db/".$fileName.".csv", "r")) !== FALSE) {
+        while (($csv = fgetcsv($file, 1000, $sepatator)) !== FALSE) {
             $data[] = $csv;
         }
         fclose($file);

@@ -65,7 +65,8 @@
         $imageArray = getImageArray();
         generatePublicFolders() ;
         $imageArrayWithNewPath = changePaths($imageArray);
-        $csvData = readCsvData();
+        $csvBlogData = readCsvData("blog", ";");
+        $csvData = readCsvData("onepiece_datos", ",");
         $response = apiQuery();
         $chapter1059Images = getChapterImages("1059");
         $chapter1059ImagesWithCorrectPath = getChapterImagesWithCorrectPath($chapter1059Images);
@@ -79,6 +80,7 @@
         $chapter1063ImagesWithCorrectPath = getChapterImagesWithCorrectPath($chapter1063Images);
         $chapter1064Images = getChapterImages("1064");
         $chapter1064ImagesWithCorrectPath = getChapterImagesWithCorrectPath($chapter1064Images);
+        $blogTemplateVars = ["csvBlogData" => $csvBlogData];
         $imageTemplateVars = ["imageArrayWithNewPath" => $imageArrayWithNewPath];
         $csvTemplateVars = ["csvData" => $csvData];
         $apiTemplateVars = ["response" => $response];
@@ -99,7 +101,7 @@
         $capitulo1063_template_filename = "src/templates/capitulo1063.template.php";
         $capitulo1064_template_filename = "src/templates/capitulo1064.template.php";
         copyImages($imageArray);
-        makeHtmlFile($index_template_filename, $imageTemplateVars, "index.html");
+        makeHtmlFile($index_template_filename, $blogTemplateVars, "index.html");
         makeHtmlFile($comics_template_filename, $imageTemplateVars, "comics.html");
         makeHtmlFile($csvData_template_filename, $csvTemplateVars, "csvData.html");
         makeHtmlFile($apiCaller_template_filename, $apiTemplateVars, "apiCaller.html");
@@ -112,5 +114,3 @@
     }
 
     main();
-
-?>
