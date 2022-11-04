@@ -49,7 +49,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * **Jairo Alonso Juárez** - *Programador, documentador y project manager* - [jairoalonsodev](https://github.com/jairoalonsodev)
 * **David Moyano Lopez** - *Diseño y Programador* - [daviiidmoyano](https://github.com/daviiidmoyano)
 
-* **Marc Sabina Sala** - *Programador y Tester* - [daviiidmoyano](https://github.com/marcss2003)
+* **Marc Sabina Sala** - *Programador y Tester* - [marcss2003](https://github.com/marcss2003)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/jairoalonsodev/m07_UF1_practice/graphs/contributors) quíenes han participado en este proyecto. 
 
