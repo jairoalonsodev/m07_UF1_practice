@@ -1,6 +1,6 @@
 # Comic Viewer
 
-Este proyecto es una web generada a partir de scripts escritos en PHP para poder visualizar comics y estar a la última del manga "One Piece"
+Este proyecto es una web generada a partir de scripts (SSG) escritos en PHP para poder visualizar comics y estar a la última del manga "One Piece"
 
 ## Comenzando 🚀
 
@@ -34,7 +34,17 @@ Hay diferentes formas, en nuestro caso nuestra favorita es docker. A continuaci�
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+Para poder ejecutar el proyecto debes situarte en el archivo "generator.php" y ejecutar "CTRL + F5", de esta forma se ejecutaran todos los scripts y se generaran los html correspondientes en la carpeta "public". Puedes ejecutarlo las veces que quieras **nunca se duplican los archivos!**
+
+*Ejecutar servidor*
+
+Gracias a nuestra instalación de php podemos ejecutar un pequeño servidor web.
+
+Para ejecutar el servidor lo primero que debemos es situarnos en la carpeta "public" y ejecutar los siguiente:
+
+```
+- php -S 0.0.0.0:8080 -t .
+```
 
 ## Construido con 🛠️
 
